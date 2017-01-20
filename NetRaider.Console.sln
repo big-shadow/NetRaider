@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Shared.Extensions", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetRaider.Core.Controller", "NetRaider.Controller\NetRaider.Core.Controller.csproj", "{3D2C1380-2E00-46A7-9148-CABFEC92654C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetRaider.Core.Models", "NetRaider.Core.Models\NetRaider.Core.Models.csproj", "{73312B94-8486-4801-A3D5-FC3927486901}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3D2C1380-2E00-46A7-9148-CABFEC92654C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D2C1380-2E00-46A7-9148-CABFEC92654C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D2C1380-2E00-46A7-9148-CABFEC92654C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73312B94-8486-4801-A3D5-FC3927486901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73312B94-8486-4801-A3D5-FC3927486901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73312B94-8486-4801-A3D5-FC3927486901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73312B94-8486-4801-A3D5-FC3927486901}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

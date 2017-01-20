@@ -1,4 +1,4 @@
-﻿using NetRaider.Configuration;
+﻿using NetRaider.Core.Controller;
 using System;
 
 namespace NetRaider.ConsoleGUI
@@ -7,14 +7,19 @@ namespace NetRaider.ConsoleGUI
     {
         private static void Main(string[] args)
         {
-            var test = Config.Item["PrivoxyPort"];
-            Console.WriteLine(test);
+            Controller controller = new Controller();
+            controller.Communicator.MessageEvent += WriteMessage;
 
-            test = Config.Item["TorPath"];
-            Console.WriteLine(test);
+            controller.TestTor();
+            controller.TestPing();
 
             // Pause execution.
             Console.Read();
+        }
+
+        public static void WriteMessage(string message)
+        {
+            Console.WriteLine(message);
         }
     }
 }

@@ -40,9 +40,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Communicator.cs" />
     <Compile Include="Controller.cs" />
-    <Compile Include="IPAddressess\IPAddressTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Shared.Extensions\Core.Shared.Extensions.csproj">
+      <Project>{2d01894b-dbf2-424f-a79f-6d151e8efa19}</Project>
+      <Name>Core.Shared.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Tor\Core.Tor.csproj">
+      <Project>{07a15f4a-e0c9-4a7e-8c8e-0c45f582dd86}</Project>
+      <Name>Core.Tor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetRaider.Configuration\NetRaider.Configuration.csproj">
+      <Project>{9289e3a2-0d84-4199-8443-3bfaaae89051}</Project>
+      <Name>NetRaider.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetRaider.Core.Models\NetRaider.Core.Models.csproj">
+      <Project>{73312b94-8486-4801-a3d5-fc3927486901}</Project>
+      <Name>NetRaider.Core.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
